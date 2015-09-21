@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<script>/* If-Else
+			Marc Wyatt
+			9/21/2015
+			*/
+		</script>
+		<meta charset="utf-8">
+		<title>paycheck with If-Else Statements</title>
+</head>
+
+  <body>
+	<script type="text/javascript">
+		//Input hours and payrate, output check
+		var hours=prompt("hours worked?");
+		var rate=prompt("Rate of pay?");
+		var pay;
+		if(hours<=0) pay=0;
+		else if(hours<=20) pay=hours*rate;
+		else if(hours>20 && hours<=40) pay=(20*rate)+((hours-20)*(2*rate));
+		else pay=(20*rate)+((20)*(2*rate))+((hours-40)*(rate*3));
+		document.write("<p>Your pay is " + pay + "</p>"); 
+	</script>
+  </body>
+</html>
