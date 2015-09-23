@@ -41,12 +41,72 @@
 		  document.write("<td>"+(x&&y?"T":"F")+"</td>");
 		  document.write("<td>"+(x||y?"T":"F")+"</td>");
 		  document.write("<td>"+(x^y?"T":"F")+"</td>");
-		  document.write("<td>"+(X^Y^Y?"T":"F")+"</td>");
-		  document.write("<td>"+(X^Y^X?"T":"F")+"</td>");
-		  document.write("<td>"+(!(X&&Y)?"T":"F")+"</td>");
-		  document.write("<td>"+(!X||!Y?"T":"F")+"</td>");
-		  document.write("<td>"+(!(X||Y)?"T":"F")+"</td>");
-		  document.write("<td>"+(!X&&!Y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y^y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y^x?"T":"F")+"</td>");
+		  document.write("<td>"+(!(x&&y)?"T":"F")+"</td>");
+		  document.write("<td>"+(!x||!y?"T":"F")+"</td>");
+		  document.write("<td>"+(!(x||y)?"T":"F")+"</td>");
+		  document.write("<td>"+(!x&&!y?"T":"F")+"</td>");
+		 
+	  </script>
+     </tr>
+	   <tr>
+      <script>
+	      var x=true;
+		  var y=false;
+		  document.write("<td>"+(x?"T":"F")+"</td>");
+		  document.write("<td>"+(y?"T":"F")+"</td>");
+		  document.write("<td>"+(!x?"T":"F")+"</td>");
+		  document.write("<td>"+(!y?"T":"F")+"</td>");
+		  document.write("<td>"+(x&&y?"T":"F")+"</td>");
+		  document.write("<td>"+(x||y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y^y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y^x?"T":"F")+"</td>");
+		  document.write("<td>"+(!(x&&y)?"T":"F")+"</td>");
+		  document.write("<td>"+(!x||!y?"T":"F")+"</td>");
+		  document.write("<td>"+(!(x||y)?"T":"F")+"</td>");
+		  document.write("<td>"+(!x&&!y?"T":"F")+"</td>");
+		 
+	  </script>
+     </tr>
+	   <tr>
+      <script>
+	      var x=false;
+		  var y=true;
+		  document.write("<td>"+(x?"T":"F")+"</td>");
+		  document.write("<td>"+(y?"T":"F")+"</td>");
+		  document.write("<td>"+(!x?"T":"F")+"</td>");
+		  document.write("<td>"+(!y?"T":"F")+"</td>");
+		  document.write("<td>"+(x&&y?"T":"F")+"</td>");
+		  document.write("<td>"+(x||y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y^y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y^x?"T":"F")+"</td>");
+		  document.write("<td>"+(!(x&&y)?"T":"F")+"</td>");
+		  document.write("<td>"+(!x||!y?"T":"F")+"</td>");
+		  document.write("<td>"+(!(x||y)?"T":"F")+"</td>");
+		  document.write("<td>"+(!x&&!y?"T":"F")+"</td>");
+		 
+	  </script>
+     </tr>
+	   <tr>
+      <script>
+	      var x=false;
+		  var y=false;
+		  document.write("<td>"+(x?"T":"F")+"</td>");
+		  document.write("<td>"+(y?"T":"F")+"</td>");
+		  document.write("<td>"+(!x?"T":"F")+"</td>");
+		  document.write("<td>"+(!y?"T":"F")+"</td>");
+		  document.write("<td>"+(x&&y?"T":"F")+"</td>");
+		  document.write("<td>"+(x||y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y^y?"T":"F")+"</td>");
+		  document.write("<td>"+(x^y^x?"T":"F")+"</td>");
+		  document.write("<td>"+(!(x&&y)?"T":"F")+"</td>");
+		  document.write("<td>"+(!x||!y?"T":"F")+"</td>");
+		  document.write("<td>"+(!(x||y)?"T":"F")+"</td>");
+		  document.write("<td>"+(!x&&!y?"T":"F")+"</td>");
 		 
 	  </script>
      </tr>
