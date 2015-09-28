@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Pay Check</title>
+    <script>
+	/*
+		Marc Wyatt
+		09/27/2015
+		Array
+	*/
+	</script>
+    </head>
+    
+    <body>
+    <table width="200" border="1">
+        <tr>
+          <th>Hours</th>
+          <th>Gross Pay</th>
+		  <th>Pay Rate </th>
+		  <th>Tax</th>
+		  <th>Net Pay</th>
+        </tr>
+        <script>
+			//variables
+			var payRate=prompt("Calculate your Paycheck table \n Pay Rate $'s");
+			var nHours=72;
+			var dblTim=20;
+			var trpTim=40;
+			var taxRate=10;
+			var hrsWrkd=[];
+			var payChk=[];
+			var grossPay=[];
+			for(var hours=0;hours<=nHours;hours++){
+			  hrsWrkd[hours]=hours;
+			  if(hours<=dblTim){
+				   payChk[hours]=hours*payRate;
+			  }else if(hours<trpTim){
+				   payChk[hours]=dblTim*payRate+(hours-dblTim)*2*payRate;
+			  }else{
+				   payChk[hours]=dblTim*payRate+(trpTim-dblTim)*2*payRate+(hours-trpTim)*3*payRate;
+			  }
+			}
+			for(var hours=0;hours<=nHours;hours++){
+				grossPay[hours]=(payChk[hours]*.9);
+			}
+			//Display to document
+			for(var hours=0;hours<=nHours;hours++){
+				document.write("<tr>");
+				  document.write("<td>"+hrsWrkd[hours]+"</td>");
+				  document.write("<td>$"+payChk[hours].toFixed(2)+"</td>");
+					if(hours<=19){ //Checks for pay rate and displays
+						document.write("<td>$"+payRate+"</td>");
+					}else if(hours<=39){
+						document.write("<td>$"+(payRate*2)+"</td>");
+					}else{
+						document.write("<td>$"+(payRate*3)+"</td>");
+					}
+				  document.write("<td>"+taxRate+"%</td>")
+				  document.write("<td>$"+grossPay[hours]+"</td>")
+				document.write("</tr>");
+			}
+		</script>
+	</table>
+    </body>
+</html>
